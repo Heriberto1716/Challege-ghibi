@@ -4,7 +4,7 @@ from app.database import usuarios_db
 from app.utils import obtener_datos_ghibli_por_rol
 import uuid
 
-app = FastAPI(title="Challenge Backend - API de Usuarios y Ghibli")
+app = FastAPI(title="API de Usuarios y Ghibli")
 
 @app.post("/usuarios")
 def crear_usuario(datos_usuario: Usuario):
